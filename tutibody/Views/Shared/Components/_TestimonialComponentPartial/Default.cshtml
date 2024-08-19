@@ -1,0 +1,53 @@
+﻿@model List<tutibody.DAL.Entities.Product>
+<div class="s-testimonials">
+
+    <div class="overlay"></div>
+
+    <div class="row testimonials-header">
+        <div class="col-full">
+            <h1 class="h02">Tutibody Koçluk Paketleri </h1>
+        </div>
+    </div>
+
+    <div class="row testimonials">
+
+        <div class="col-full testimonials__slider">
+            @foreach (var item in Model)
+            {
+                <div class="testimonials__slide">
+                    <div class="row narrow section-intro">
+                        <div class="col-full">
+                            <h1 style="color: white;">@item.Title</h1>
+                            <p>
+                               @item.Feature1
+                               <br>
+                               @item.Feature2
+                               <br>
+                               @item.Feature3
+                               <br>
+                               @item.Feature4
+                               <br>
+                               @item.Feature5
+                               <br>
+                               @item.Feature6
+                               <br>
+                               
+                            </p>
+                            <div class="testimonials__author h06">
+                                @item.Price
+                              
+                                <a class="btn btn--primary full-width" href="#0">Satın Al</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+
+        </div> <!-- end testimonials__slider -->
+
+    </div> <!-- end testimonials -->
+
+</div>
